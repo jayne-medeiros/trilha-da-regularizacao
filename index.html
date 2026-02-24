@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha da Regularização - Plataforma Profissional</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css?v=14"> 
+</head>
+<body>
+
+    <nav class="navbar-bw">
+        <div class="container">
+            <a href="#" class="logo-container">
+                <img src="logo-trilha.png" alt="Logo Trilha da Regularização" class="logo-img">
+                <span class="logo-text">Trilha da Regularização</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#trilhas">Trilhas</a></li>
+                <li><a href="#blog">Blog</a></li> <li><a href="#mentoria">Mentoria</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-bw">
+        <div class="container hero-content">
+            <h1>O caminho definitivo para a <span>Excelência Artesanal.</span></h1>
+            <p class="subtitle">Uma plataforma de regularização focada em transformar sua paixão em um negócio seguro e valorizado.</p>
+            <button id="btn-regularizar" class="btn-primary-black">
+                Iniciar Minha Jornada <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="parceiros" class="section-partners-bw">
+        <div class="container">
+            <span class="partners-title">Com o apoio de:</span>
+            <div class="partner-logos">
+                <img src="img/logo-solquality.png" alt="Logo SolQuality">
+                <span class="logo-lumio-bg"><img src="img/logo-lumio.png" alt="Logo Lumiô Lab"></span>
+                <img src="img/logo-sindicato.png" alt="Logo Sindicato Produtores Rurais de Sousa-PB">
+            </div>
+        </div>
+    </section>
+
+    <section id="trilhas" class="section-default-bw">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title">Nossas Trilhas de Conhecimento</h2>
+                <p class="section-description">Caminhos claros e práticos para você levar seu queijo ainda mais longe.</p>
+            </div>
+
+            <div class="trilhas-grid-bw">
+                <p style="grid-column: 1/-1; text-align: center; color: #777; padding: 40px;">
+                    <i class="ri-loader-4-line ri-spin"></i> Carregando módulos...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-default-bw" style="background-color: #fff; border-top: 1px solid var(--color-border);">
+        <div class="container">
+             <div class="section-intro">
+                <h2 class="section-title">Blog & Materiais</h2>
+                <p class="section-description">Notícias, atualizações e conteúdos exclusivos para sua jornada.</p>
+            </div>
+
+            <div class="blog-grid-bw" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <p style="grid-column: 1/-1; text-align: center; color: #777;">Carregando novidades...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentoria" class="section-default-bw section-mentoria-bw">
+        <div class="container">
+            <div class="mentoria-layout-bw">
+                <div class="mentoria-image-container">
+                    <img src="img/queijo-manteiga-artesanal.jpg" alt="Processo artesanal de produção de queijo de manteiga em preto e branco">
+                </div>
+                <div class="mentoria-content">
+                    <h2 class="section-title">Cultivando o seu Crescimento, <span>Juntos.</span></h2>
+                    <p>Apoio próximo para nutrir sua paixão e resolver seus desafios.</p>
+                    
+                    <div class="mentoria-buttons">
+                        <a href="https://wa.me/5583981685192" target="_blank" class="btn-secondary-black">
+                            <i class="ri-calendar-check-line"></i> Agendar Consultoria
+                        </a>
+                        <a href="https://chat.whatsapp.com/Ld8uHledrI70W28XTP4Q8X" target="_blank" class="btn-secondary-black">
+                            <i class="ri-group-line"></i> Entrar no Grupo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="section-contact-bw">
+        <div class="container">
+            <div class="contact-layout-bw">
+                <div class="contact-info">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem alguma pergunta sobre a trilha? Queremos ouvir você. Use nossos canais diretos.</p>
+                    <a href="https://wa.me/5583981685192" target="_blank" class="contact-link">
+                        <i class="ri-whatsapp-line"></i>
+                        (83) 98168-5192
+                    </a>
+                </div>
+                
+                <div class="contact-form-card-bw">
+                    <h3>Seja um Parceiro</h3>
+                    <p>Sua organização pode fazer a diferença. Envie sua proposta.</p>
+                    
+                    <form id="form-parceria" class="bw-form" action="enviar.php" method="POST">
+                        <input type="text" name="nome" placeholder="Seu nome ou organização" required>
+                        <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                        <textarea name="mensagem" placeholder="Conte-nos sua proposta..." rows="5" required></textarea>
+                        <button type="submit" class="btn-primary-black">
+                            Enviar Mensagem <i class="ri-mail-send-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bw">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-info">
+                    <a href="#" class="logo-container">
+                        <img src="logo-trilha.png" alt="Logo Trilha da Regularização" class="logo-img-footer"> <span class="logo-text">Trilha da Regularização</span>
+                    </a>
+                    <p>Crescendo juntos, um queijo artesanal por vez.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#trilhas">Nossas Trilhas</a></li>
+                        <li><a href="#blog">Blog</a></li> <li><a href="#mentoria">Acompanhamento</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="legal.html#termos" target="_blank">Termos de Uso</a></li>
+                        <li><a href="legal.html#privacidade" target="_blank">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>Desenvolvido com carinho por Lumiô Lab</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-em-breve" class="modal-overlay">
+        <div class="modal-content">
+            <button id="btn-close-modal" class="modal-close-btn">&times;</button>
+            <div class="modal-icon"><i class="ri-tools-line"></i></div>
+            <h2>Módulo em Construção!</h2>
+            <p>Estamos preparando este conteúdo com muito carinho e expertise. Em breve, esta trilha estará disponível para você!</p>
+            <p>Agradecemos a sua compreensão.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    // SENSOR LUMIÔ - Contabiliza acesso
+    // Mude o nome abaixo para o nome EXATO da tecnologia deste site
+    const nomeDestaTecnologia = "Trilha da Regularização"; 
+
+    fetch(`https://hlumio.com/tracker.php?tech=${encodeURIComponent(nomeDestaTecnologia)}`)
+        .then(response => console.log("Acesso contabilizado no Hub."))
+        .catch(error => console.error("Erro na telemetria."));
+</script>
+</body>
+</html>

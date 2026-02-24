@@ -1,0 +1,10 @@
+# local secrets
+admin/config.php
+
+# runtime/generated content
+admin/uploads/
+admin/dados.json
+
+# OS
+.DS_Store
+Thumbs.db
